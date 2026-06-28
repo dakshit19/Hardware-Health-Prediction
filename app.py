@@ -45,6 +45,12 @@ if FastAPI is not None:
 else:
     app = None
 
+@app.get("/")
+def root():
+    return {
+        "message": "Motherboard Health AI API",
+        "status": "running"
+    }
 
 if __name__ == "__main__":
     if FastAPI is None:
