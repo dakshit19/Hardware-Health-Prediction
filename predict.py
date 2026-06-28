@@ -133,14 +133,13 @@ class MotherboardHealthPredictor:
 
     def _load_artifact(self, filename: str, required: bool = True):
         path = self.model_dir / filename
+
+        print(f"Loading {filename}")
+
         if not path.exists() and not required:
             return None
-        try:
-            return load_joblib(path)
-        except FileNotFoundError as exc:
-            raise FileNotFoundError(
-                f"Missing artifact `{filename}` in {self.model_dir}. Run `python train.py` first."
-            ) from exc
+
+        return load_joblib(path)
 
     def _load_metadata(self) -> dict[str, Any]:
         try:
