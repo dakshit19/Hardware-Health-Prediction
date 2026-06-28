@@ -12,3 +12,4 @@ lightgbm>=4.5.0
 fastapi>=0.112.0
 uvicorn>=0.30.5
 pydantic>=2.8.2
+streamlit
