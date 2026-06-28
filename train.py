@@ -141,7 +141,6 @@ def main() -> None:
     logger.info("Saving model artifacts.")
     save_joblib(sklearn_preprocessor, args.model_dir / "preprocessor.pkl")
     save_joblib(label_encoder, args.model_dir / "encoder.pkl")
-    save_joblib(feature_engineer, args.model_dir / "feature_engineer.pkl")
     save_joblib(problem_result.best_model, args.model_dir / "problem_classifier.pkl")
     save_joblib(health_result.best_model, args.model_dir / "health_regressor.pkl")
     save_joblib(failure_result.best_model, args.model_dir / "failure_probability.pkl")

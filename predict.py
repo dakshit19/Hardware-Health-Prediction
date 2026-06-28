@@ -18,6 +18,7 @@ from recommendation_engine.root_cause import RootCauseAnalyzer
 from utils.io import load_joblib, load_json
 from utils.risk import calculate_risk_index, classify_risk_level, clamp
 from utils.validation import coerce_to_dataframe
+from feature_engineering.features import MotherboardFeatureEngineer
 
 
 class MotherboardHealthPredictor:
@@ -29,7 +30,7 @@ class MotherboardHealthPredictor:
         self.metadata = self._load_metadata()
         self.preprocessor = self._load_artifact("preprocessor.pkl")
         self.label_encoder = self._load_artifact("encoder.pkl")
-        self.feature_engineer = self._load_artifact("feature_engineer.pkl")
+        self.feature_engineer = MotherboardFeatureEngineer()
         self.problem_classifier = self._load_artifact("problem_classifier.pkl")
         self.health_regressor = self._load_artifact("health_regressor.pkl")
         self.failure_classifier = self._load_artifact("failure_probability.pkl")
