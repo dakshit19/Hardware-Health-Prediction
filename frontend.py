@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("💻 Motherboard Health AI")
+st.title("Laptop Health Prediction Model")
 st.write("Enter the motherboard parameters and click **Predict**.")
 
 with st.form("prediction_form"):
