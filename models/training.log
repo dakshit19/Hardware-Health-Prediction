@@ -1,0 +1,47 @@
+2026-06-27 23:32:10 | INFO | motherboard_health_ai | Loading dataset from C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\data\Laptop_Motherboard_Health_Monitoring_Dataset.csv
+2026-06-27 23:32:10 | INFO | motherboard_health_ai | Dataset shape after duplicate removal: (2000, 8)
+2026-06-27 23:32:10 | INFO | motherboard_health_ai | Splitting dataset with 16 model features.
+2026-06-27 23:32:34 | INFO | motherboard_health_ai | Training multiclass problem classifiers.
+2026-06-27 23:33:25 | INFO | motherboard_health_ai | Training health score regressors.
+2026-06-27 23:33:36 | INFO | motherboard_health_ai | Training failure probability classifiers.
+2026-06-27 23:33:45 | INFO | motherboard_health_ai | Training Remaining Useful Life regressors.
+2026-06-27 23:33:58 | INFO | motherboard_health_ai | Training Isolation Forest anomaly detector.
+2026-06-27 23:33:58 | INFO | motherboard_health_ai | Training trend forecaster.
+2026-06-27 23:33:58 | INFO | motherboard_health_ai | Saving model artifacts.
+2026-06-27 23:33:59 | INFO | motherboard_health_ai | Generating visualizations where plotting dependencies are available.
+2026-06-27 23:37:06 | INFO | motherboard_health_ai | Loading dataset from C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\data\Laptop_Motherboard_Health_Monitoring_Dataset.csv
+2026-06-27 23:37:06 | INFO | motherboard_health_ai | Dataset shape after duplicate removal: (2000, 8)
+2026-06-27 23:37:06 | INFO | motherboard_health_ai | Splitting dataset with 16 model features.
+2026-06-27 23:37:08 | INFO | motherboard_health_ai | Training multiclass problem classifiers.
+2026-06-27 23:37:55 | INFO | motherboard_health_ai | Training health score regressors.
+2026-06-27 23:38:10 | INFO | motherboard_health_ai | Training failure probability classifiers.
+2026-06-27 23:38:23 | INFO | motherboard_health_ai | Training Remaining Useful Life regressors.
+2026-06-27 23:38:38 | INFO | motherboard_health_ai | Training Isolation Forest anomaly detector.
+2026-06-27 23:38:39 | INFO | motherboard_health_ai | Training trend forecaster.
+2026-06-27 23:38:39 | INFO | motherboard_health_ai | Saving model artifacts.
+2026-06-27 23:38:39 | INFO | motherboard_health_ai | Generating visualizations where plotting dependencies are available.
+2026-06-27 23:38:44 | INFO | motherboard_health_ai | Training complete. Artifacts saved to C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\models
+2026-06-27 23:44:02 | INFO | motherboard_health_ai | Loading dataset from C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\data\Laptop_Motherboard_Health_Monitoring_Dataset.csv
+2026-06-27 23:44:02 | INFO | motherboard_health_ai | Dataset shape after duplicate removal: (2000, 8)
+2026-06-27 23:44:02 | INFO | motherboard_health_ai | Splitting dataset with 16 model features.
+2026-06-27 23:44:04 | INFO | motherboard_health_ai | Training multiclass problem classifiers.
+2026-06-27 23:44:30 | INFO | motherboard_health_ai | Training health score regressors.
+2026-06-27 23:44:55 | INFO | motherboard_health_ai | Training failure probability classifiers.
+2026-06-27 23:45:15 | INFO | motherboard_health_ai | Training Remaining Useful Life regressors.
+2026-06-27 23:45:37 | INFO | motherboard_health_ai | Training Isolation Forest anomaly detector.
+2026-06-27 23:45:39 | INFO | motherboard_health_ai | Training trend forecaster.
+2026-06-27 23:45:39 | INFO | motherboard_health_ai | Saving model artifacts.
+2026-06-27 23:45:39 | INFO | motherboard_health_ai | Generating visualizations where plotting dependencies are available.
+2026-06-27 23:45:48 | INFO | motherboard_health_ai | Training complete. Artifacts saved to C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\models
+2026-06-27 23:57:20 | INFO | motherboard_health_ai | Loading dataset from C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\data\Laptop_Motherboard_Health_Monitoring_Dataset.csv
+2026-06-27 23:57:20 | INFO | motherboard_health_ai | Dataset shape after duplicate removal: (2000, 8)
+2026-06-27 23:57:20 | INFO | motherboard_health_ai | Splitting dataset with 16 model features.
+2026-06-27 23:57:22 | INFO | motherboard_health_ai | Training multiclass problem classifiers.
+2026-06-27 23:57:57 | INFO | motherboard_health_ai | Training health score regressors.
+2026-06-27 23:58:10 | INFO | motherboard_health_ai | Training failure probability classifiers.
+2026-06-27 23:58:24 | INFO | motherboard_health_ai | Training Remaining Useful Life regressors.
+2026-06-27 23:58:55 | INFO | motherboard_health_ai | Training Isolation Forest anomaly detector.
+2026-06-27 23:58:56 | INFO | motherboard_health_ai | Training trend forecaster.
+2026-06-27 23:58:57 | INFO | motherboard_health_ai | Saving model artifacts.
+2026-06-27 23:58:57 | INFO | motherboard_health_ai | Generating visualizations where plotting dependencies are available.
+2026-06-27 23:59:12 | INFO | motherboard_health_ai | Training complete. Artifacts saved to C:\Users\Dell\Documents\Codex\2026-06-27\files-mentioned-by-the-user-laptop\outputs\MotherboardHealthAI\models

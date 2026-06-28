@@ -1,0 +1,7 @@
+feature_a,feature_b,abs_correlation
+PowerStability,VoltageDeviation,1.0
+CoolingEfficiency,FanStress,1.0
+HealthScore,RemainingUsefulLifeDays,0.9654
+Voltage,PowerStability,0.9515
+Voltage,VoltageDeviation,0.9515
+MemoryPressure,ResourcePressure,0.9254
