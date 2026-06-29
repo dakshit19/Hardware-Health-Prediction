@@ -6,7 +6,8 @@ from typing import Any
 
 from predict import MotherboardHealthPredictor
 
-from fastapi import HTTPException import traceback
+from fastapi import HTTPException 
+import traceback
 
 
 try:
