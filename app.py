@@ -6,6 +6,9 @@ from typing import Any
 
 from predict import MotherboardHealthPredictor
 
+from fastapi import HTTPException import traceback
+
+
 try:
     from fastapi import FastAPI
     from pydantic import BaseModel, Field
@@ -40,8 +43,17 @@ if FastAPI is not None:
         return {"status": "ok"}
 
     @app.post("/predict")
-    def predict(payload: MotherboardTelemetry) -> dict[str, Any]:
-        return predictor.predict(payload.model_dump())
+    def predict(payload: MotherboardTelemetry):
+
+        try:
+            return predictor.predict(payload.model_dump())
+
+        except Exception as e:
+            traceback.print_exc()      # prints the full error in Render logs
+            raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
 else:
     app = None
 
