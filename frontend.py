@@ -1,7 +1,13 @@
 import streamlit as st
-import requests
+from predict import MotherboardHealthPredictor
 
-API_URL = "https://motherboard-api-p5g1.onrender.com/predict"
+@st.cache_resource
+def load_predictor():
+    return MotherboardHealthPredictor()
+
+predictor = load_predictor()
+
+
 
 st.set_page_config(
     page_title="Motherboard Health AI",
@@ -69,17 +75,16 @@ if submit:
     }
 
     try:
-        response = requests.post(API_URL, json=payload)
 
-        if response.status_code == 200:
+        result = predictor.predict(payload)
 
-            result = response.json()
+        st.success("Prediction Complete")
 
-            st.success("Prediction Complete")
+        st.subheader("Prediction")
 
-            st.subheader("Prediction")
 
-            for key, value in result.items():
+
+        for key, value in result.items():
 
                 if isinstance(value, dict):
 
@@ -110,14 +115,6 @@ if submit:
                         f"**{key.replace('_',' ').title()} :** {value}"
                     )
 
-        else:
 
-            st.error(f"API Error : {response.text}")
-
-    except requests.exceptions.ConnectionError:
-
-        st.error(
-            "Cannot connect to FastAPI backend.\n\n"
-            "Run:\n\n"
-            "uvicorn app:app --reload"
-        )
+    except Exception as e:
+        st.error(f"Prediction failed:\n\n{e}")
